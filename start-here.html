@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.css" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron mt-3">
+                <div class="media">
+                    <img src="https://f3nation.com/wp-content/uploads/2020/07/logo.png" class="mr-3" alt="F3 Logo" style="width: 100px;">
+                    <div class="media-body">
+                        <h5 class="mt-0">Welcome - Relaunch for F3Austin</h5>
+                        Thank you for reviewing our relaunch effort for the website.  Here is an overview of what we are building.
+                    </div>
+                </div>
+            </div>
+
+            <div class="jumbotron mt-3">
+                <!-- Site Design source https://1drv.ms/u/s!AkxKbLydrvaLjbY372NDZMVKgPSJWQ -->
+                <h3 class="mt-0">Site Diagram</h3>
+                <figure class="figure">
+                    <img src="F3Austin Site Diagram-Site Diagram.png" class="figure-img img-fluid rounded" alt="Site Diagram">
+                    <figcaption  class="figure-caption">
+                        <p>Here is the <em>current</em> overall structure for the site.</p>
+                        <p>Home, New to F3, Workout are critical to nail for the launch.  Improving News/Q Sheet/Backblast submitting will fast follow.</p>
+                        <p>Adding new pages to the site should be done as little as possible to keep the navigation and orientation model as simple as possible.</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="jumbotron mt-3">
+                <h3 class="mt-0">Page Layout Model</h3>
+                <figure class="figure">
+                    <img src="F3Austin Site Diagram-Layout Model.png" class="figure-img img-fluid rounded" alt="Page Layout">
+                    <figcaption  class="figure-caption">
+                        <p>Pages should all follow a simalar pattern, top navigation consistant site width, a large image of the PAX, with consistant social media bottom nav.</p>
+                        <p>Pages within a page there are a number of standard groups for information; cards, reference table, hero tile, and event based (extended card format).  This can expanded over time but will keep consistant patterning over the site.</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="jumbotron mt-3">
+                <h3 class="mt-0">Formatting with Bootstrap 4.5</h3>
+                <div class="media">
+                    <svg width="100px" height="100px" viewBox="0 0 16 16" class="bi bi-bootstrap-fill mr-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
+                    </svg>
+                    <div class="media-body">
+                        <p>First and foremost everything is built for reactive design (including this page).</p>
+                        <p>As much as possible sticking to bootstraps design patterns gives us quality layout tools, and consistant layout tools along with a handly website for checking out examples and concepts we can integrate in the future.  Minimzing the work for our layout will pay off as we get additional contributions from the PAX. </p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Page Designs</h3>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Home Page / Landing Page</h5>
+                    <p class="card-text mt-3">
+                       Clean and easy information is the goal.  Basic attention capturing without too much content to scan.  Since we still need to settle on themes to help create a direction.  
+                    </p>
+                        <a href="home.html" class="btn btn-primary">Home - Cyborg (Current)</a>
+                        <a href="home-lux.html" class="btn btn-secondary">Home - Lux</a>
+                        <a href="home-boot.html" class="btn btn-info">Home - Bootstrap</a>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">New to F3</h5>
+                    <p class="card-text mt-3">
+                       This is the page that is primarily an information dump, and then resources, finally with workout links at the bottom. By design no links to Slack or PAX related components.   
+                    </p>
+                    <a href="new-to-f3.html" class="btn btn-primary">New to F3</a>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">Workouts</h5>
+                    <p class="card-text mt-3">
+                       Information desinty is the key, make it easy to find a workout, pull up the time and address so folks.  Links to Q Sheets and BBs on hand as well.
+                    </p>
+                    <a href="workouts.html" class="btn btn-primary">Workouts</a>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">News</h5>
+                    <p class="card-text mt-3">
+                       A place where all F3 Austin news posts are available in reverse chronolocial ordering.
+                    </p>
+                    <a href="news.html" class="btn btn-primary">News</a>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
