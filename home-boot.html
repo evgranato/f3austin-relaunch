@@ -4,6 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <style>
+            .nav-pills .nav-link.active {
+                background-color: grey;
+                color: white;
+            }
+            .nav-item .nav-link {
+                color: black;
+            }
+        </style>
     </head>
     <body>
         <!-- 
@@ -17,15 +26,16 @@
         -->
         <div id="app">
             <nav class="navbar sticky-top bg-light">
-                <div class="navbar-brand bg-primary rounded pr-3 pl-3">
+                <div class="navbar-brand bg-secondary rounded pr-3 pl-3">
                     <img class="img-fluid" src="F3 Austin _ White (Long).svg" width="150px">
                 </div>
                 <!-- Site Navigation -->
                 <ul class="nav nav-pills">
                     <li class="nav-item"><a class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a class="nav-link">New to F3</a></li>
+                    <li class="nav-item"><a class="nav-link">About Us</a></li>
                     <li class="nav-item"><a class="nav-link">Workouts</a></li>
-                    <li class="nav-item"><a class="nav-link">News</a></li>
+                    <li class="nav-item"><a class="nav-link">Backblasts</a></li>
+                    <li class="nav-item"><a class="nav-link">Contact Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="http://f3nation.com" target="_blank">F3 Nation <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
                         <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
@@ -33,8 +43,13 @@
                 </ul>
             </nav>
 
-            <div class="container">
-                <img class="img-fluid mt-3" src="https://f3natx.com/wp-content/uploads/2020/09/IMG_0074-scaled.jpeg">
+            <div class="jumbotron" style="background-image: url('https://f3natx.com/wp-content/uploads/2020/09/IMG_0074-scaled.jpeg'); background-size: cover">
+                <img src="f3-logo.png" alt="" style="margin-top: 100px; display: block; width: 8em; margin-left: auto; margin-right: auto">
+                <h1 class="display-4" style="color: white; text-size: 50px; text-align: center">F3 Austin</h1>
+                <p class="lead" style="color: white; text-size: 50px; text-align: center">The Mission Of F3 Is To Plant, Grow And Serve Small Workout Groups For The Invigoration Of Male Community Leadership.</p>
+                <div class="col text-center">
+                    <div type="button" class="btn btn-primary btn-large" style="margin-bottom: 600px; text-align: center;">Find A Workout</div>
+                </div>
             </div>
 
             <div class="container">
@@ -47,7 +62,7 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">New To F3</a>
+                            <a href="#" class="btn btn-primary">About F3</a>
                         </div>
                     </div>
                     <div class="card">
@@ -88,7 +103,7 @@
             <div class="container">
                 <div class="jumbotron mt-3">
                     <div class="media">
-                        <img src="f3-logo.png" class="mr-3 bg-primary rounded" alt="F3 Logo" style="width: 100px;">
+                        <img src="f3-logo.png" class="mr-3 bg-dark rounded" alt="F3 Logo" style="width: 100px;">
                         <div class="media-body">
                             <h5 class="mt-0">Part of the F3 Nation</h5>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus magna sed nisl commodo pellentesque. Suspendisse felis mi, interdum quis mollis in, pellentesque nec orci. Nunc metus dui, semper eget felis non, varius tincidunt lectus.
