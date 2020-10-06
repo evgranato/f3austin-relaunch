@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <style>
+            .nav-pills .nav-link.active {
+                background-color: grey;
+                color: white;
+            }
+            .nav-item .nav-link {
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            Styling is informed based on
+            https://getbootstrap.com/docs/4.5/getting-started/introduction/
+            https://www.w3schools.com/bootstrap4/bootstrap_images.asp
+
+
+            External link https://icons.getbootstrap.com/icons/link-45deg/
+
+        -->
+        <div id="app">
+            <nav class="navbar sticky-top bg-light">
+                <div class="navbar-brand bg-secondary rounded pr-3 pl-3">
+                    <img class="img-fluid" src="F3 Austin _ White (Long).svg" width="150px">
+                </div>
+                <!-- Site Navigation -->
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link">Workouts</a></li>
+                    <li class="nav-item"><a class="nav-link">Backblasts</a></li>
+                    <li class="nav-item"><a class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://f3nation.com" target="_blank">F3 Nation <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
+                      </svg></a></li>
+                </ul>
+            </nav>
+
+            <div class="jumbotron" style="background-image: url('https://f3natx.com/wp-content/uploads/2020/09/IMG_0074-scaled.jpeg'); background-size: cover">
+                <img src="f3-logo.png" alt="" style="margin-top: 100px; display: block; width: 8em; margin-left: auto; margin-right: auto">
+                <h1 class="display-4" style="color: white; text-size: 50px; text-align: center">F3 Austin</h1>
+                <p class="lead" style="color: white; text-size: 50px; text-align: center">The Mission Of F3 Is To Plant, Grow And Serve Small Workout Groups For The Invigoration Of Male Community Leadership.</p>
+                <div class="col text-center">
+                    <div type="button" class="btn btn-primary btn-large" style="margin-bottom: 600px; text-align: center;">Find A Workout</div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="card-deck mt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Fitness, Fellowship and Faith</h5>
+                            <p class="card-text">
+                                F3 is a national network of free, peer-led workouts for men of all ages and fitness levels. Our mission is to plant, grow and serve small workout groups for men for the invigoration of male community leadership.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">About F3</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">F3 in Austin, TX</h5>
+                            <p class="card-text">
+                                Established in 2017, our growing free men’s workout group has expanded to many workouts throughout the week, monthly happy hours and coffeeteria, and volunteer work to help our greater Austin community
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Workouts</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">F3 Five Core Principles
+                            </h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Free of Charge</li>
+                                    <li>Open to all Men</li>
+                                    <li>Held Outdoors</li>
+                                    <li>Peer Led</li>
+                                    <li>Ends with COT</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-primary" href="http://f3nation.com" target="_blank" >F3 Nation <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                                <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
+                              </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="jumbotron mt-3">
+                    <div class="media">
+                        <img src="f3-logo.png" class="mr-3 bg-dark rounded" alt="F3 Logo" style="width: 100px;">
+                        <div class="media-body">
+                            <h5 class="mt-0">Part of the F3 Nation</h5>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus magna sed nisl commodo pellentesque. Suspendisse felis mi, interdum quis mollis in, pellentesque nec orci. Nunc metus dui, semper eget felis non, varius tincidunt lectus.
+                        </div>
+                        <img src="F3 Austin _ Color.svg" class="ml-3" style="width: 100px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mb-3">
+                <h3 class="">Recent News</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">F3 Austin Region Launch</h5>
+                        <h6 class="card-subtitle text-muted">Jan 16th 2021</h6>
+                        <p class="card-text mt-3">
+                            Sed rhoncus dui quis diam tempus, quis dictum magna suscipit. Nulla facilisi. Mauris ornare arcu vitae quam volutpat tempus. Aliquam erat volutpat. Donec nibh arcu, tristique non ullamcorper vel, eleifend mattis massa. Nulla ut iaculis ex, sit amet euismod enim. Morbi maximus lorem sit amet est tincidunt, a condimentum diam porttitor. Praesent in eros quis arcu eleifend ornare...
+                        </p>
+                        <a href="#" class="btn btn-primary">Full Post</a>
+                        <a></a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"></small>Last updated 3 weeks ago</small>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-body text-right">
+                        <h5 class="card-title">F3 Austin Region Launch</h5>
+                        <h6 class="card-subtitle text-muted">Jan 16th 2021</h6>
+                        <p class="card-text mt-3">
+                            Integer velit felis, rhoncus rutrum sodales sed, faucibus eget lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean id mi non massa vehicula pellentesque a vitae nibh. Suspendisse arcu felis, tempus a ex id, gravida rhoncus dui. Suspendisse potenti. Vestibulum purus metus, vulputate id feugiat ut, condimentum et ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                        </p>
+                        <a href="#" class="btn btn-primary">Full Post</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"></small>Last updated 3 weeks ago</small>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar bg-light">
+                <a class="nav-brand">©F3 Austin. All rights reserved.</a>
+                <!-- Social Media -->
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link">Twitter</a></li>
+                    <li class="nav-item"><a class="nav-link">Facebook</a></li>
+                    <li class="nav-item"><a class="nav-link">Instragram</a></li>
+                    <li class="nav-item"><a class="nav-link">Email</a></li>
+                </ul>                
+            </nav>
+        </div>
+    </body>
+</html>
