@@ -44,6 +44,26 @@
             </div>
 
             <div class="jumbotron mt-3">
+                <h3 class="mt-0">Page Design Pattern</h3>
+                <figure class="figure">
+                    <pre>
+    &lt;div id="app"&gt;
+        &lt;div id="nav-top"&gt;&lt;/div&gt;
+        &lt;div id="nav-bottom"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script lang="javascript"&gt;
+        $("#nav-top").load("./components/nav-top.html")
+        $("#nav-bottom").load("./components/nav-bottom.html")
+    &lt;/script&gt;
+                    </pre>
+                    <figcaption  class="figure-caption">
+                        <p>All pages should be broken apart into core controls, with the same top/bottom nav on every page.</p>
+                        <p>Using jquery to load and place contents this makes modification easier to track and review.  Site wide controls are in ./components/* whereas page specific elements are in ./components/{page-name]/*</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="jumbotron mt-3">
                 <h3 class="mt-0">Formatting with Bootstrap 4.5</h3>
                 <div class="media">
                     <svg width="100px" height="100px" viewBox="0 0 16 16" class="bi bi-bootstrap-fill mr-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
