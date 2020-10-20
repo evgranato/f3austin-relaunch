@@ -1,0 +1,78 @@
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="bbTitle">Backblast Title</label>
+            <input type="text" class="form-control form-control-lg" id="bbTitle" placeholder="Squatfest 2020">
+        </div>
+        <div class="form-group">
+            <label for="bbDate">Date</label>
+            <input type="date" class="form-control" id="bbDate" placeholder="Date">
+        </div>
+        <div class="form-group">
+            <label for="bbPicture">Picture</label>
+            <input type="file" class="form-control-file" id="bbPicture" accept="image/*">
+        </div>
+        <div class="form-group">
+            <label for="bbAO">Area of Operation</label>
+            <select class="form-control" id="bbAO">
+                <option disabled selected>Pick an AO</option>
+                <option>Cedar Park - Mettle Of Honor</option>
+                <option>Cedar Park -The Greyhound</option>
+                <option>Cedar Park -The Bighouse</option>
+                <option>Cedar Park -Robins Hood</option>
+                <option>Bear Creek - Bowie Knife</option>
+                <option>Downtown - Capitol Punishment</option>
+                <option>Downtown - The Bridge</option>
+                <option>Round Rock - Sasquatch</option>
+                <option>West Lake Hills - The Festival</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="bbGloomFactor">Gloom Factor</label>
+            <input type="text" class="form-control" id="bbGloomFactor" placeholder="Clear skies and frostly 46 degrees">
+        </div>
+        <div class="form-group">
+            <label for="bbQ">QIC</label>
+            <input type="text" class="form-control" id="bbQ" placeholder="Your F3 Name">
+        </div>
+        <fieldset>
+            <legend class="form-label">Pax Attendance</legend>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="bbFng" value="">
+                <label for="bbFng" class="form-check-label">Friendly New Guy(s)</label>
+            </div>
+            <div class="form-group">
+                <label for="bbPaxCount">PAX Count</label>
+                <input type="number" class="form-control" id="bbPaxCount" placeholder="How many pax were at the workout?">
+            </div>
+            <div class="form-group">
+                <label for="bbPax">PAX Name</label>
+                <input type="text" class="form-control" id="bbPax" placeholder="Pax that atteneded the workout">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend class="form-label">Workout Details</legend>
+            <div class="form-group">
+                <label for="bbWarmarama">Warmarama</label>
+                <textarea type="text" class="form-control" rows="5" id="bbWarmarama" placeholder="Warm up exercises&#10;&#10;50 side shuffle hops SC&#10;10 willy mays hays IC"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="bbThethang">The Thang</label>
+                <textarea type="text" class="form-control" rows="5" id="bbThethang" placeholder="This was the main event describe what you and the PAX did.&#10;&#10;Everyone grabbed coupons and hike up and down murder hill twice..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="bbMary">Mary</label>
+                <textarea type="text" class="form-control" rows="5" id="bbMary" placeholder="Mary exercises&#10;&#10;20 crunchy frog IC&#10;20 ww1s SC"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="bbAnnouncements">Announcements</label>
+                <textarea type="text" class="form-control" rows="3" id="bbAnnouncements" placeholder="Announcements for the PAX"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="bbCot">Circle of Trust</label>
+                <textarea type="text" class="form-control" rows="3" id="bbCot" placeholder="The heart of the circle of trust"></textarea>
+            </div>
+        </fieldset>
+        <button type="submit" class="btn btn-secondary">Submit</button>
+    </form>
+</div>
