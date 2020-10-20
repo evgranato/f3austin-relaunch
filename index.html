@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.css" crossorigin="anonymous">
+        <style>
+        </style>
     </head>
     <body>
         <div class="container">
             <div class="jumbotron mt-3">
                 <div class="media">
-                    <img src="F3 Austin _ Color.svg" class="mr-3 p-1 bg-primary rounded" alt="F3 Logo" style="width: 100px;">
+                    <img src="F3 Austin _ Color.svg" class="mr-3 p-1 bg-secondary rounded" alt="F3 Logo" style="width: 100px;">
                     <div class="media-body">
                         <h5 class="mt-0">Welcome - Relaunch for F3Austin</h5>
                         Thank you for reviewing our relaunch effort for the website.  Here is an overview of what we are building.
@@ -25,7 +26,7 @@
                     <img src="F3Austin Site Diagram-Site Diagram.png" class="figure-img img-fluid rounded" alt="Site Diagram">
                     <figcaption  class="figure-caption">
                         <p>Here is the <em>current</em> overall structure for the site.</p>
-                        <p>Home, New to F3, Workout are critical to nail for the launch.  Improving News/Q Sheet/Backblast submitting will fast follow.</p>
+                        <p>Home, Contact Us, Schedule, Backblast Overview are critical to nail for the launch.  Improving Q Sheet/Backblast submitting will fast follow.</p>
                         <p>Adding new pages to the site should be done as little as possible to keep the navigation and orientation model as simple as possible.</p>
                     </figcaption>
                 </figure>
@@ -38,6 +39,26 @@
                     <figcaption  class="figure-caption">
                         <p>Pages should all follow a simalar pattern, top navigation consistant site width, a large image of the PAX, with consistant social media bottom nav.</p>
                         <p>Pages within a page there are a number of standard groups for information; cards, reference table, hero tile, and event based (extended card format).  This can expanded over time but will keep consistant patterning over the site.</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="jumbotron mt-3">
+                <h3 class="mt-0">Page Design Pattern</h3>
+                <figure class="figure">
+                    <pre>
+    &lt;div id="app"&gt;
+        &lt;div id="nav-top"&gt;&lt;/div&gt;
+        &lt;div id="nav-bottom"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script lang="javascript"&gt;
+        $("#nav-top").load("./components/nav-top.html")
+        $("#nav-bottom").load("./components/nav-bottom.html")
+    &lt;/script&gt;
+                    </pre>
+                    <figcaption  class="figure-caption">
+                        <p>All pages should be broken apart into core controls, with the same top/bottom nav on every page.</p>
+                        <p>Using jquery to load and place contents this makes modification easier to track and review.  Site wide controls are in ./components/* whereas page specific elements are in ./components/{page-name}/*</p>
                     </figcaption>
                 </figure>
             </div>
@@ -62,29 +83,47 @@
                     <p class="card-text mt-3">
                        Clean and easy information is the goal.  Basic attention capturing without too much content to scan.  Since we still need to settle on themes to help create a direction.  
                     </p>
-                        <a href="home.html" class="btn btn-primary">Home - Cyborg (Current)</a>
-                        <a href="home-lux.html" class="btn btn-secondary">Home - Lux</a>
-                        <a href="home-boot.html" class="btn btn-info">Home - Bootstrap</a>
+                        <a href="home.html" class="btn btn-secondary">Home</a>
                 </div>
             </div>
 
             <div class="card mt-3">
                 <div class="card-body">
-                    <h5 class="card-title"><em>Not Started</em> New to F3</h5>
+                    <h5 class="card-title">About Us</h5>
+                    <p class="card-text mt-3">
+                       Tell new and existing members about the start to F3 Austin, how we run workouts, and how we form a shield lock.   
+                    </p>
+                    <a href="about-us.html" class="btn btn-secondary">About Us</a>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title"><em>Not Started</em> Contact Us</h5>
                     <p class="card-text mt-3">
                        This is the page that is primarily an information dump, and then resources, finally with workout links at the bottom. By design no links to Slack or PAX related components.   
                     </p>
-                    <a href="new-to-f3.html" class="btn btn-primary">New to F3</a>
+                    <a href="contact-us.html" class="btn btn-secondary">Contact Us</a>
                 </div>
             </div>
 
             <div class="card mt-3">
                 <div class="card-body">
-                    <h5 class="card-title"><em>Not Started</em> Workouts</h5>
+                    <h5 class="card-title"><em>Not Started</em> Schedule</h5>
                     <p class="card-text mt-3">
                        Information desinty is the key, make it easy to find a workout, pull up the time and address so folks.  Links to Q Sheets and BBs on hand as well.
                     </p>
-                    <a href="workouts.html" class="btn btn-primary">Workouts</a>
+                    <a href="workouts.html" class="btn btn-secondary">Workouts</a>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title"><em>Not Started</em> Backblast (Overview)</h5>
+                    <p class="card-text mt-3">
+                       How a backblast will look and be associated within the site.
+                    </p>
+                    <a href="backblast.html" class="btn btn-secondary">Workouts</a>
                 </div>
             </div>
 
@@ -92,23 +131,31 @@
                 <div class="card-body">
                     <h5 class="card-title"><em>Not Started</em> Backblast</h5>
                     <p class="card-text mt-3">
-                       How a backblast will look and be associated within the site.
+                       Show all of the regions backblast activitiy
                     </p>
-                    <a href="backblast.html" class="btn btn-primary">Workouts</a>
+                    <a href="backblast.html" class="btn btn-secondary">Workouts</a>
                 </div>
             </div>
-
 
             <div class="card mt-3">
                 <div class="card-body">
-                    <h5 class="card-title"><em>Not Started</em> News</h5>
+                    <h5 class="card-title"><em>Not Started</em> Backblast (Individual)</h5>
                     <p class="card-text mt-3">
-                       A place where all F3 Austin news posts are available in reverse chronolocial ordering.
+                       How a backblast will be presented.
                     </p>
-                    <a href="news.html" class="btn btn-primary">News</a>
+                    <a href="backblast.html" class="btn btn-secondary">Workouts</a>
                 </div>
             </div>
 
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">Backblast Submittal</h5>
+                    <p class="card-text mt-3">
+                       How a backblast will look and be associated within the site.
+                    </p>
+                    <a href="backblast-submittal.html" class="btn btn-secondary">Workouts</a>
+                </div>
+            </div>
         </div>
     </body>
 </html>

@@ -7,21 +7,29 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </head>
     <body>
+        <style>
+            .nav-link#home {
+                background-color: unset;
+                color: black;
+            }
+            .nav-link#about-us {
+                background-color: grey;
+                color: white;
+            }
+        </style>
         <div id="app">
             <div id="nav-top"></div>
             <div id="hero" class="mt-3"></div>
-            <div id="cards" class="mt-3"></div>
-            <div id="nation" class="mt-3"></div>
-            <div id="three-fs" class="mb-3"></div>
-            <div id="nav-bottom"></div>
+            <div id="founding" class="mt-3"></div>
+            <div id="grid" class="mt-3"></div>
+            <div id="nav-bottom" class="mt-3"></div>
         </div>
 
         <script lang="javascript">
             $("#nav-top").load("./components/nav-top.html")
-            $("#hero").load("./components/home/hero.html")
-            $("#cards").load("./components/home/cards.html")
-            $("#nation").load("./components/home/nation.html")
-            $("#three-fs").load("./components/home/three-fs.html")
+            $("#hero").load("./components/about-us/hero.html")
+            $("#founding").load("./components/about-us/founding.html")
+            $("#grid").load("./components/about-us/grid.html")
             $("#nav-bottom").load("./components/nav-bottom.html")
         </script>
     </body>
