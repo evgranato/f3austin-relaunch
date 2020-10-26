@@ -13,7 +13,9 @@
                 color: white;
             }
             body {
-                background: linear-gradient(90deg, rgba(0,40,104,0.5284488795518207) 0%, rgba(166,40,26,0.623686974789916) 54%, rgba(0,0,0,0.7161239495798319) 98%);
+                background: #bdc3c7; /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #bdc3c7, #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #bdc3c7, #2c3e50);
             }
             .nav-item .nav-link {
                 color: black;
