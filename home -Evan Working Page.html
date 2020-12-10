@@ -50,6 +50,58 @@
                 font-weight: bold;
                 font-size: 2em;
             }
+            header {
+            position: relative;
+            background-color: black;
+            height: 75vh;
+            min-height: 25rem;
+            width: 100%;
+            overflow: hidden;
+            }
+
+            header video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            }
+
+            header .container {
+            position: relative;
+            z-index: 2;
+            }
+
+            header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.3;
+            z-index: 1;
+            }
+
+            #e-block {
+                opacity: 0.9;
+            }
+
+            @media (pointer: coarse) and (hover: none) {
+            header {
+                background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+            }
+            header video {
+                display: none;
+            }
+            }
         </style>
 <!-- MADE THIS COLLAPSABLE NEED TO WORK ON KEEPING WORKOUTS OUTSIDE OF THE COLLAPSE-->
         <nav class="navbar navbar-expand-xl sticky-top navbar-light bg-light">
@@ -112,10 +164,47 @@
                 </div>
             </div> -->
 
-            <div class="container">
-                <div class="jumbotron text-center" style="margin: 25vh 0; overflow-y: hidden;"> 
+            <header>
+                <div class="overlay"></div>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                  <source src="/Users/evgranato/Documents/GitHub/f3austin-relaunch/Skyline Sweeping Shot.mp4" type="video/mp4">
+                </video>
+                <div class="container h-50">
+                    <img src="/Users/evgranato/Documents/GitHub/f3austin-relaunch/F3 Austin | Color & White Text.png" alt="" style="padding-top: 170px; margin-top: 100px; display: block; width: 10em; margin-left: auto; margin-right: auto; margin-top: -40px;">
+                <div class="container h-100">
+                  <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white" id="e-block">
+                      <h1 class="display-1">F3 Austin</h1>
+                      <h2 class="display-4">Fitness | Fellowship | Faith</h2>
+                    </div>
+                </div>
+                  </div>
+                </div>
+            </header>
+
+            <!-- VIDEO HEADER-LOGO LEFT
+            <header>
+                <div class="overlay"></div>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                  <source src="/Users/evgranato/Documents/GitHub/f3austin-relaunch/Skyline Sweeping Shot.mp4" type="video/mp4">
+                </video>
+                <div class="container h-100">
+                  <div class="d-flex h-100 text-center align-items-center">
+                    <img src="/Users/evgranato/Documents/GitHub/f3austin-relaunch/F3 Austin | Color & White Text.png" alt="" style="padding-top: 50px; margin-top: 100px; display: block; width: 8em; margin-left: auto; margin-right: auto; margin-top: -40px;">
+                    <div class="w-100 text-white">
+                      <h1 class="display-1">F3 Austin</h1>
+                      <h2 class="display-4">Fitness | Fellowship | Faith</h2>
+                    </div>
+                  </div>
+                </div>
+            </header> -->
+            
+
+            <!-- <div class="container">
+                <div class="jumbotron text-center" style="background-image: linear-gradient(rgba(90, 88, 88, 0.5) 70.71%, rgba(15, 13, 13, 0.829)),url('/Users/evgranato/Documents/GitHub/f3austin-relaunch/Convergence 12-5-20.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                    <img src="/Users/evgranato/Documents/GitHub/f3austin-relaunch/F3 Austin | Color & White Text.png" alt="" style="padding-top: 50px; margin-top: 100px; display: block; width: 8em; margin-left: auto; margin-right: auto; margin-top: -60px;">
                     <div>
-                        <video style="position: fixed; top: 0px; left: 0px; z-index: -1; width: 100%;" preload muted autoplay loop>
+                        <video style="position: fixed; top: 0px; left: 0px; z-index: -1; width: relative;" preload muted autoplay loop>
                             <source src="/Users/evgranato/Documents/GitHub/f3austin-relaunch/Skyline Sweeping Shot.mp4" type="video/mp4">
                         </video>
                     </div> 
@@ -123,7 +212,7 @@
                         <div  type="button" class="btn btn-secondary btn-large" style="margin-top: 150px;">Find A Workout</div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <style>
                 .card-footer {
