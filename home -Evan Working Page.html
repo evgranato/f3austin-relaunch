@@ -16,6 +16,9 @@
             .nav-item .nav-link {
                 color: black;
             }
+            .card {
+                background-color:lightgrey
+            }
             .card-deck {
                 padding-bottom: 2em;
                 padding-top: 2em;
@@ -95,6 +98,51 @@
             #e-block {
                 opacity: 0.9;
             }
+            
+            .parallax-container {
+                position: relative;
+                width: 100%;
+                height: 600px;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                perspective: 8px;
+                perspective-origin: 0%;
+               
+                
+            }
+            .background {
+                position: absolute;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform: translateZ(0px);
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .foreground {
+                position: absolute;
+                width: 70%;
+                z-index: 1;
+                top: 30%;
+                left: 15%;
+            }
+            /* .foreground {
+                display: flex;
+                margin-top: auto;
+                margin-bottom: 50px;
+                transform-origin: 0;
+                transform: translateZ(4px) scale(0.625);
+            } */
+
+            .foreground h1 {
+                font-size: 36px;
+            }
             /* #F3Fs {
                 color:rgb(50,133,209);
             } */
@@ -111,7 +159,7 @@
         </style>
 <!-- MADE THIS COLLAPSABLE NEED TO WORK ON KEEPING WORKOUTS OUTSIDE OF THE COLLAPSE-->
         <nav class="navbar navbar-expand-xl sticky-top navbar-light bg-light">
-            <div class="navbar-brand bg-secondary rounded pr-3 pl-3">
+            <div class="navbar-brand  rounded pr-3 pl-3" style="background: rgba(151, 144, 144, 0.62)">
                 <img class="img-fluid" src="F3 Austin _ White (Long).svg" width="150px">
             </div>
             <div class="navbar-collapse-lg">
@@ -279,15 +327,15 @@
                 </div>
             </div>
 
-            <div class="container bg-block">
-                <div class="jumbotron">
+            <div class="container bg-block" style="background: transparent">
+                <div class="jumbotron" style="background-color: lightgray; background-size: 100%;">
                     <div class="media">
                         <img src="f3-logo.png" class="mr-3 bg-secondary rounded" alt="F3 Logo" style="width: 100px;">
                         <div class="media-body">
                             <h5 class="mt-0">Part of the F3 Nation</h5>
                             F3 is a national network of free, peer-led workouts for men. Our mission is to plant, grow and serve small workout groups for men for the invigoration of male community leadership. We welcome men of all ages and fitness levels to our workouts, and have no requirement for membership other than that you show up at the appointed time and place and follow what the workout leader (the “Q” in F3 lingo) does.
                         </div>
-                        <img src="F3 Austin _ Color.svg" class="ml-3 bg-secondary rounded p-2" style="width: 100px;">
+                        <!-- <img src="F3 Austin _ Color.svg" class="ml-3 bg-secondary rounded p-2" style="width: 100px;"> -->
                     </div>
                 </div>
             </div>
@@ -333,12 +381,40 @@
                     </div>
                 </div>
             </div>
+
+            <div class="parallax-container">
+                <div class="background">
+                  <img class="background__image" src="/Users/evgranato/Documents/GitHub/f3austin-relaunch/IMG_0267.png" />
+                </div>
+                <div class="foreground">
+                  <div class="foreground__content">
+                    <div class="contianer what-is-f3 text-white">
+                        <h2>Still Not Sure F3 Is Right For You?</h2>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/rGo03Y1ZZ3I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                      <div class="container video-footer text-white">
+                          <h3>F3 Intro Video</h3>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- <div class="bg-image">
+                <div class="row">
+                    <img src="/Users/evgranato/Documents/GitHub/f3austin-relaunch/Convergence 12-5-20.jpeg" alt="">
+                </div>
+                <div class="bg-text">Text</div>
+            </div> -->
+            
+
             <div class="container credo">
                 <div class="jumbotron text-center" style="background-image: linear-gradient(rgba(90, 88, 88, 0.5) 70.71%, rgba(15, 13, 13, 0.829)),url('https://f3natx.com/wp-content/uploads/2020/09/IMG_0074-scaled.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
                     <h2>"Leave No Man Behind, But Leave No Man Where You Find Him."</h2>
                 </div>
             </div>
-            <div class="container bg-block">
+            <!-- <div class="container bg-block" style="background: transparent; background-color: lightgrey">
                 <div class="contianer what-is-f3">
                     <h2>Still Not Sure F3 Is Right For You?</h2>
                 </div>
@@ -348,7 +424,7 @@
                   <div class="container video-footer">
                       <h3>F3 Intro Video</h3>
                   </div>
-            </div>
+            </div> -->
 
             <nav class="navbar bg-light">
                 <span class="nav-brand">©F3 Austin. All rights reserved.</span>
