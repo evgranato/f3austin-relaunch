@@ -27,7 +27,7 @@
                 background-color: grey;
             }
             .credo {
-                padding-top: 2em;
+                padding-top: 5em;
                 padding-bottom: 2em;
                 color: white;
             }
@@ -98,18 +98,18 @@
             #e-block {
                 opacity: 0.9;
             }
-            
+
             .parallax-container {
                 position: relative;
                 width: 100%;
-                height: 600px;
+                height: 900px;
                 overflow-x: hidden;
-                overflow-y: scroll;
+                overflow-y: hidden;
                 perspective: 8px;
-                perspective-origin: 0%;
-               
-                
+                perspective-origin: 0 0;
+                display: flex;
             }
+        
             .background {
                 position: absolute;
                 background-size: cover;
@@ -120,9 +120,6 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                transform: translateZ(0px);
-                margin-left: auto;
-                margin-right: auto;
             }
 
             .foreground {
@@ -139,10 +136,17 @@
                 transform-origin: 0;
                 transform: translateZ(4px) scale(0.625);
             } */
+            #pImage{
+                background-image: url(/Users/evgranato/Documents/GitHub/f3austin-relaunch/IMG_0267.png);
+                background-position: center right;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
 
             .foreground h1 {
                 font-size: 36px;
-            }
+            } */
             /* #F3Fs {
                 color:rgb(50,133,209);
             } */
@@ -382,8 +386,9 @@
                 </div>
             </div>
 
+            <!-- PARALLAX TEST 1
             <div class="parallax-container">
-                <div class="background">
+                <div class="background" id="pImage">
                   <img class="background__image" src="/Users/evgranato/Documents/GitHub/f3austin-relaunch/IMG_0267.png" />
                 </div>
                 <div class="foreground">
@@ -396,6 +401,19 @@
                       </div>
                       <div class="container video-footer text-white">
                           <h3>F3 Intro Video</h3>
+                      </div>
+                  </div>
+                </div>
+              </div> -->
+
+              <div class="parallax-container" id="pImage" ">
+                <div class="foreground">
+                  <div class="foreground__content">
+                    <div class="contianer what-is-f3 text-white">
+                        <h2>Still Not Sure F3 Is Right For You?</h2>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9" id="F3Vid">
+                        <iframe class="embed-responsive-item" width="560" height="200" src="https://www.youtube.com/embed/rGo03Y1ZZ3I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                       </div>
                   </div>
                 </div>
