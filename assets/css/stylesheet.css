@@ -192,3 +192,15 @@ html {
   margin-top: -40px;
   padding-bottom: 100px;
 }
+
+#pImageSchedule {
+  background-image: linear-gradient(
+      rgba(90, 88, 88, 0.5) 70.71%,
+      rgba(15, 13, 13, 0.829)
+    ),
+    url(/Users/evgranato/Documents/GitHub/f3austin-relaunch/MerkinSitup.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
