@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="./scripts/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="/Users/evgranato/Documents/GitHub/f3austin-relaunch/assets/css/stylesheet.css">
+</head>
+
+<body>
+    <!-- MADE THIS COLLAPSABLE NEED TO WORK ON KEEPING WORKOUTS OUTSIDE OF THE COLLAPSE-->
+    <div class="hero-image">
+        <div class="hero-text">
+            <img src="/Users/evgranato/Documents/GitHub/f3austin-relaunch/F3 Austin | Color & White Text.png" alt="" id=schLogo>
+            <h1 class="display-4">Schedule</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron">
+            <table style="height: 100px;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-calendar-check mr-3"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z">
+                                </path>
+                                <path fill-rule="evenodd"
+                                    d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z">
+                                </path>
+                            </svg>
+                        </td>
+                        <td>
+                            <h3>Next Workout</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="media">
+                                <img src="https://f3natx.com/wp-content/uploads/2019/10/TG-Thumbnail.png"
+                                    class="mr-3 bg-secondary rounded" alt="" style="height: 5em;">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Wednesday the 21st at The Greyhound</h5>
+                                    In the rear parking lot of Running Brushy Middle School. <a
+                                        href="https://www.google.com/maps/search/?api=1&amp;query=">2303 N Lakeline
+                                        Blvd, Cedar Park, TX 78613</a>
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <style>
+            td span {
+                display: none;
+                
+            }
+            @media(max-width: 768px) {
+                table thead {
+                    position: absolute;
+                    top: -9999px;
+                    right: -9999px;
+                    
+                }
+
+                table tr {
+                    display: flex;
+                    flex-wrap: row;
+                    flex-wrap: wrap;
+                    margin-bottom: 3em;
+                    
+                }
+
+                table tr td {
+                    width: 100%;
+
+                }
+
+                td span {
+                    display: inline-block;
+                    width: 8em;
+                    font-weight: 700;   
+                }
+            }
+        </style>
+
+        <h3>Brushy Creek</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time&#40;am&#41;</th>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Q Sheet</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span>Day</span>Monday</td>
+                    <td><span>Time</span>545-630</td>
+                    <td><span>Name</span>Sasquatch</td>
+                    <td><span>Location</span><a href="#" target="directions">1234 Road St, Cedar Park</a></td>
+                    <td><span>Q Sheet</span><a href="#" target="qsheet">Sign up</a></td>
+                </tr>
+                <tr>
+                    <td><span>Day</span>Wednesday</td>
+                    <td><span>Time</span>545-630</td>
+                    <td><span>Name</span>Sasquatch</td>
+                    <td><span>Location</span><a href="#" target="directions">1234 Road St, Cedar Park</a></td>
+                    <td><span>Q Sheet</span><a href="#" target="qsheet">Sign up</a></td>
+                </tr>
+                <tr>
+                    <td><span>Day</span>Friday</td>
+                    <td><span>Time</span>545-630</td>
+                    <td><span>Name</span>Sasquatch</td>
+                    <td><span>Location</span><a href="#" target="directions">1234 Road St, Cedar Park</a></td>
+                    <td><span>Q Sheet</span><a href="#" target="qsheet">Sign up</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Ceder Park / Leander</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time&#40;am&#41;</th>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Q Sheet</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span>Day</span>Monday</td>
+                    <td><span>Time</span>500-545</td>
+                    <td><span>Name</span>Mettle of Honor</td>
+                    <td><span>Location</span><a href="#" target="directions">1234 Road St, Cedar Park</a></td>
+                    <td><span>Q Sheet</span><a href="#" target="qsheet">Sign up</a></td>
+                </tr>
+                <tr>
+                    <td><span>Day</span>Wednesday</td>
+                    <td><span>Time</span>500-545</td>
+                    <td><span>Name</span>The Greyhound</td>
+                    <td><span>Location</span><a href="#" target="directions">1234 Road St, Cedar Park</a></td>
+                    <td><span>Q Sheet</span><a href="#" target="qsheet">Sign up</a></td>
+                </tr>
+                <tr>
+                    <td><span>Day</span>Friday</td>
+                    <td><span>Time</span>500-545</td>
+                    <td><span>Name</span>The Big House</td>
+                    <td><span>Location</span><a href="#" target="directions">1234 Road St, Cedar Park</a></td>
+                    <td><span>Q Sheet</span><a href="#" target="qsheet">Sign up</a></td>
+                </tr>
+                <tr>
+                    <td><span>Day</span>Saturday</td>
+                    <td><span>Time</span>600-645</td>
+                    <td><span>Name</span>Robin's Hood</td>
+                    <td><span>Location</span><a href="#" target="directions">1234 Road St, Cedar Park</a></td>
+                    <td><span>Q Sheet</span><a href="#" target="qsheet">Sign up</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Downtown</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time&#40;am&#41;</th>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Q Sheet</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span>Day</span>Tuesday</td>
+                    <td><span>Time</span>530-630</td>
+                    <td><span>Name</span>Capital Punishment</td>
+                    <td><span>Location</span><a href="#" target="directions">1234 Road St, Cedar Park</a></td>
+                    <td><span>Q Sheet</span><a href="#" target="qsheet">Sign up</a></td>
+                </tr>
+                <tr>
+                    <td><span>Day</span>Wednesday</td>
+                    <td><span>Time</span>600-700</td>
+                    <td><span>Name</span>The Bridge</td>
+                    <td><span>Location</span><a href="#" target="directions">1234 Road St, Cedar Park</a></td>
+                    <td><span>Q Sheet</span><a href="#" target="qsheet">Sign up</a></td>
+                </tr>
+                <tr>
+                    <td><span>Day</span>Saturday</td>
+                    <td><span>Time</span>700-800</td>
+                    <td><span>Name</span>The Festival</td>
+                    <td><span>Location</span><a href="#" target="directions">1234 Road St, Cedar Park</a></td>
+                    <td><span>Q Sheet</span><a href="#" target="qsheet">Sign up</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Bear Creek</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time&#40;am&#41;</th>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Q Sheet</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span>Day</span>Tuesday</td>
+                    <td><span>Time</span>600-700</td>
+                    <td><span>Name</span>Bowie Knife</td>
+                    <td><span>Location</span><a href="#" target="directions">1234 Road St, Cedar Park</a></td>
+                    <td><span>Q Sheet</span><a href="#" target="qsheet">Sign up</a></td>
+                </tr>
+                <tr>
+                    <td><span>Day</span>Thursday</td>
+                    <td><span>Time</span>600-700</td>
+                    <td><span>Name</span>Bowie Knife</td>
+                    <td><span>Location</span><a href="#" target="directions">1234 Road St, Cedar Park</a></td>
+                    <td><span>Q Sheet</span><a href="#" target="qsheet">Sign up</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Dripping Springs</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time&#40;am&#41;</th>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Q Sheet</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span>Day</span>Tuesday</td>
+                    <td><span>Time</span>600-700</td>
+                    <td><span>Name</span>Hemingway</td>
+                    <td><span>Location</span><a href="#" target="directions">1234 Road St, Cedar Park</a></td>
+                    <td><span>Q Sheet</span><a href="#" target="qsheet">Sign up</a></td>
+                </tr>
+                <tr>
+                    <td><span>Day</span>Thursday</td>
+                    <td><span>Time</span>600-700</td>
+                    <td><span>Name</span>Hemingway</td>
+                    <td><span>Location</span><a href="#" target="directions">1234 Road St, Cedar Park</a></td>
+                    <td><span>Q Sheet</span><a href="#" target="qsheet">Sign up</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <nav class="navbar bg-light">
+        <span class="nav-brand">©F3 Austin. All rights reserved.</span>
+        <!-- Social Media -->
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a class="nav-link">Twitter</a></li>
+            <li class="nav-item"><a class="nav-link">Facebook</a></li>
+            <li class="nav-item"><a class="nav-link">Instragram</a></li>
+            <li class="nav-item"><a class="nav-link">Email</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <script lang="javascript">
+        $("#nav-top").load("./components/nav-top.html")
+        $("#hero").load("./components/home/hero.html")
+        $("#cards").load("./components/home/cards.html")
+        $("#nation").load("./components/home/nation.html")
+        $("#three-fs").load("./components/home/three-fs.html")
+        $("#nav-bottom").load("./components/nav-bottom.html")
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
