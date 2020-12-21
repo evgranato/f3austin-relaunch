@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="./scripts/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="/Users/evgranato/Documents/GitHub/f3austin-relaunch/assets/css/stylesheet.css">
+</head>
+
+<body>
+    <!-- MADE THIS COLLAPSABLE NEED TO WORK ON KEEPING WORKOUTS OUTSIDE OF THE COLLAPSE-->
+    <div class="hero-image">
+        <div class="hero-text">
+            <img src="/Users/evgranato/Documents/GitHub/f3austin-relaunch/F3 Austin | Color & White Text.png" alt="" id=schLogo>
+            <h1 class="display-4">Backblasts</h1>
+        </div>
+    </div>
+
+        <div class="container" style="padding-top: 50px">
+        <form>
+        <div class="form-group">
+                    <label for="bbTitle">Backblast Title</label>
+        <input type="text" class="form-control form-control-lg" id="bbTitle" placeholder="Squatfest 2020"></div>
+        <div class="form-group">
+                    <label for="bbDate">Date</label>
+        <input type="date" class="form-control" id="bbDate" placeholder="Date"></div>
+        <div class="form-group">
+                    <label for="bbPicture">Picture</label>
+        <input type="file" class="form-control-file" id="bbPicture" accept="image/*"></div>
+        <div class="form-group">
+                    <label for="bbAO">Area of Operation</label>
+        <select class="form-control" id="bbAO">
+        <option disabled="" selected="">Pick an AO</option>
+        <option>Cedar Park - Mettle Of Honor</option>
+        <option>Cedar Park -The Greyhound</option>
+        <option>Cedar Park -The Bighouse</option>
+        <option>Cedar Park -Robins Hood</option>
+        <option>Bear Creek - Bowie Knife</option>
+        <option>Downtown - Capitol Punishment</option>
+        <option>Downtown - The Bridge</option>
+        <option>Round Rock - Sasquatch</option>
+        <option>West Lake Hills - The Festival</option>
+        </select></div>
+        <div class="form-group">
+                    <label for="bbGloomFactor">Gloom Factor</label>
+        <input type="text" class="form-control" id="bbGloomFactor" placeholder="Clear skies and frostly 46 degrees"></div>
+        <div class="form-group">
+                    <label for="bbQ">QIC</label>
+        <input type="text" class="form-control" id="bbQ" placeholder="Your F3 Name"></div>
+        <fieldset>
+        <legend class="form-label">Pax Attendance</legend>
+        <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="bbFng" value="">
+        <label for="bbFng" class="form-check-label">Friendly New Guy(s)</label></div>
+        <div class="form-group">
+                        <label for="bbPaxCount">PAX Count</label>
+        <input type="number" class="form-control" id="bbPaxCount" placeholder="How many pax were at the workout?"></div>
+        <div class="form-group">
+                        <label for="bbPax">PAX Name</label>
+        <input type="text" class="form-control" id="bbPax" placeholder="Pax that atteneded the workout"></div></fieldset>
+        <fieldset>
+        <legend class="form-label">Workout Details</legend>
+        <div class="form-group">
+                        <label for="bbWarmarama">Warmarama</label>
+        <textarea type="text" class="form-control" rows="5" id="bbWarmarama" placeholder="Warm up exercises
+        
+        50 side shuffle hops SC
+        10 willy mays hays IC"></textarea></div>
+        <div class="form-group">
+                        <label for="bbThethang">The Thang</label>
+        <textarea type="text" class="form-control" rows="5" id="bbThethang" placeholder="This was the main event describe what you and the PAX did.
+        
+        Everyone grabbed coupons and hike up and down murder hill twice..."></textarea></div>
+        <div class="form-group">
+                        <label for="bbMary">Mary</label>
+        <textarea type="text" class="form-control" rows="5" id="bbMary" placeholder="Mary exercises
+        
+        20 crunchy frog IC
+        20 ww1s SC"></textarea></div>
+        <div class="form-group">
+                        <label for="bbAnnouncements">Announcements</label>
+        <textarea type="text" class="form-control" rows="3" id="bbAnnouncements" placeholder="Announcements for the PAX"></textarea></div>
+        <div class="form-group">
+                        <label for="bbCot">Circle of Trust</label>
+        <textarea type="text" class="form-control" rows="3" id="bbCot" placeholder="The heart of the circle of trust"></textarea></div></fieldset>
+        <button type="submit" class="btn btn-secondary">Submit</button>
+        </form></div>
+
+    <nav class="navbar bg-light">
+        <span class="nav-brand">©F3 Austin. All rights reserved.</span>
+        <!-- Social Media -->
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a class="nav-link">Twitter</a></li>
+            <li class="nav-item"><a class="nav-link">Facebook</a></li>
+            <li class="nav-item"><a class="nav-link">Instragram</a></li>
+            <li class="nav-item"><a class="nav-link">Email</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <script lang="javascript">
+        $("#nav-top").load("./components/nav-top.html")
+        $("#hero").load("./components/home/hero.html")
+        $("#cards").load("./components/home/cards.html")
+        $("#nation").load("./components/home/nation.html")
+        $("#three-fs").load("./components/home/three-fs.html")
+        $("#nav-bottom").load("./components/nav-bottom.html")
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
