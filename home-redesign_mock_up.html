@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="./scripts/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="/Users/evgranato/Documents/GitHub/f3austin-relaunch/assets/css/stylesheet.css">
+    </head>
+    <body>
+<!-- MADE THIS COLLAPSABLE NEED TO WORK ON KEEPING WORKOUTS OUTSIDE OF THE COLLAPSE-->
+        <nav class="navbar navbar-expand-xl sticky-top navbar-light bg-light">
+            <div class="navbar-brand  rounded pr-3 pl-3" style="background: rgba(151, 144, 144, 0.62)">
+                <img class="img-fluid" src="F3 Austin _ White (Long).svg" width="150px">
+            </div>
+            <div class="navbar-collapse-lg">
+            <!-- <div class="nav-item">
+                <span><a class="workouts-nav nav-link" href="workouts.html">Workouts</a></span>
+            </div> -->
+        </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon ham-color"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar nav">
+                    <li class="nav-item"><a class="nav-link active" id="home" href="home.html">
+                        <i class="fas fa-home"></i>   Home
+                    </a></li>
+                    <li class="nav-item"><a class="nav-link" id="about-us" href="about-us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" id="workouts" href="workouts.html">Workouts</a></li>
+                    <li class="nav-item"><a class="nav-link" id="backblasts" href="backblasts.html">Backblasts</a></li>
+                    <li class="nav-item"><a class="nav-link" id="contact-us" href="contact-us.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://f3nation.com" target="_blank">F3 Nation <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
+                    </svg></a></li>
+            </ul>
+            </div>
+        </nav>
+        <div id="app">
+            <div id="nav-top"></div>
+            <div id="hero" class="mt-3"></div>
+            <div id="cards" class="mt-3"></div>
+            <div id="nation" class="mt-3"></div>
+            <div id="three-fs" class="mb-3"></div>
+            <div id="nav-bottom"></div>
+
+            <header>
+                <div class="picOverlay">
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="/Users/evgranato/Documents/GitHub/f3austin-relaunch/Skyline Sweeping Shot.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="container h-50">
+                    <img src="/Users/evgranato/Documents/GitHub/f3austin-relaunch/F3 Austin | Color & White Text.png" alt="" style="padding-top: 170px; margin-top: 100px; display: block; width: 10em; margin-left: auto; margin-right: auto; margin-top: -40px;">
+                <div class="container h-100">
+                  <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white" id="e-block">
+                      <h1 id="F3Austin" class="display-1">F3 Austin</h1>
+                      <h2 id="F3Fs" class="display-4">Fitness | Fellowship | Faith</h2>
+                    </div>
+                </div>
+                  </div>
+                </div>
+            </header>
+
+            <div class="d-flex flex-row">
+
+
+            </div>
+
+            <!-- <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 no-gutters" style="padding:0px">
+                        <img width="100%" src="http://relaunch.f3natx.com/wp-content/uploads/2020/12/MerkinSitup.png" alt="">
+                    </div>
+                    <div class="col-sm-6 align-self-center no-gutters" style="padding:0px">
+                        <div class="row justify-content-center" style="margin: 0px; text-align: center;"><h5 class="mt-0" style="font-size: 40px; font-weight: 700;">Austin Founding</h5></div>
+                        <div class="row" style="margin:0; text-align: center; word-wrap: break-word;">F3 NATX planted our shovel flags in North Austin in August 20, 2018 at Veterans Memorial Park in Cedar Park, TX. Since then, our fast-growing group has expanded to 4 workouts throughout the week, monthly happy hours and coffeeteria, and volunteer work to help our greater North Austin community in Cedar Park and Leander.</div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 align-self-center no-gutters" style="padding:0px">
+                        <div class="row justify-content-center" style="margin: 0px; text-align: center;"><h5 class="mt-0" style="font-size: 40px; font-weight: 700;">Austin Founding</h5></div>
+                        <div class="row" style="margin:0; text-align: center; word-wrap: break-word;">F3 NATX planted our shovel flags in North Austin in August 20, 2018 at Veterans Memorial Park in Cedar Park, TX. Since then, our fast-growing group has expanded to 4 workouts throughout the week, monthly happy hours and coffeeteria, and volunteer work to help our greater North Austin community in Cedar Park and Leander.</div>
+                    </div>
+                    <div class="col-sm-6 no-gutters" style="padding:0px">
+                        <img width="100%" src="http://relaunch.f3natx.com/wp-content/uploads/2020/12/MerkinSitup.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid" style="padding: 0px;">
+                <div class="card-group">
+                    <div class="card" style="border-radius: 0; border: none; margin-bottom: 0;">
+                         <div class="card-body" style="background-color: #f1B9BD;">
+                            <div style="text-align: center;">
+                                                <i class="fas fa-dollar-sign fa-5x"></i>
+                            </div>
+                            <h3 class="card-title text-center">Free Of Charge</h3>
+                            <p class="card-text text-center">
+                                                No one will ever ask you to pay anything</p>
+                
+                        </div>
+                    </div>
+                    <div class="card" style="border-radius: 0; border: none; margin-bottom: 0;">
+                        <div class="card-body" style="background-color: #E3737D;">
+                            <div style="text-align: center;">
+                                                <i class="fas fa-users fa-5x"></i>
+                            </div>
+                            <h3 class="card-title text-center">Open To All Men</h3>
+                            <p class="card-text text-center">
+                                                No limitation to this at all except &lt; 18 needs parent</p>
+                
+                        </div>
+                    </div>
+                    <div class="card" style="border-radius: 0; border: none; margin-bottom: 0;">
+                        <div class="card-body" style="background-color: #D52D3C;">
+                            <div style="text-align: center;">
+                                                <i class="fas fa-cloud-sun-rain fa-5x"></i>
+                            </div>
+                            <h3 class="card-title text-center">Held Outdoors</h3>
+                            <p class="card-text text-center">
+                                                Rain/Shine/Heat/Cold We Will Be Out There.</p>
+                
+                        </div>
+                    </div>
+                    <div class="card" style="border-radius: 0; border: none; margin-bottom: 0;">
+                        <div class="card-body" style="background-color: #AB2430;">
+                            <div style="text-align: center;">
+                                                <i class="fas fa-people-arrows fa-5x"></i>
+                            </div>
+                            <h3 class="card-title text-center">Peer Led</h3>
+                            <p class="card-text text-center">
+                                                In rotating fashion. You don't have to lead, but can.</p>
+                
+                        </div>
+                    </div>
+                    <div class="card" style="border-radius: 0; border: none; margin-bottom: 0;">
+                        <div class="card-body" style="background-color: #87212A;">
+                            <div style="text-align: center;">
+                                                <i class="fas fa-life-ring fa-5x"></i>
+                            </div>
+                            <h3 class="card-title text-center">Ends With A Circle of Trust</h3>
+                            <p class="card-text text-center">
+                                                Men leaning on men for support</p>
+                
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="hero-image" id="nope" style="background-image: linear-gradient(rgba(90, 88, 88, 0.5) 70.71%,rgba(15, 13, 13, 0.829)),url('/wp-content/uploads/2020/12/Convergence-12-5-20-scaled.jpeg'); height: 600px; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;">
+                <div class="hero-text" style="text-align: center;
+                                position: absolute;
+                                top: 40%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                color: white;">
+                <img src="/wp-content/uploads/2020/12/F3-Austin-Color-White-Text.png" alt="" style="padding-top: 170px;
+                                    margin-top: 100px;
+                                    display: block;
+                                    width: 10em;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    margin-top: -40px;
+                                    padding-bottom: 100px;">
+                <h1 class="display-4" style="font-size: 7rem; font-weight: 500;">About Us</h1>
+                </div>
+                </div>
+                <div class="container-fluid" style="padding: 0px;">
+                <div class="card-group">
+                <div class="card" style="border-radius: 0; border: none; margin-bottom: 0;">
+                <div class="card-body" style="background-color: #f1B9BD; padding-top: 70px; padding-bottom:70px;">
+                <div style="text-align: center;">
+                                                <i class="fas fa-dollar-sign fa-5x"></i></div>
+                <h3 class="card-title text-center">Free Of Charge</h3>
+                <p class="card-text text-center">
+                                                No one will ever ask you to pay anything</p>
+                
+                </div>
+                </div>
+                <div class="card" style="border-radius: 0; border: none; margin-bottom: 0;">
+                <div class="card-body" style="background-color: #E3737D; padding-top: 70px; padding-bottom:70px;">
+                <div style="text-align: center;">
+                                                <i class="fas fa-users fa-5x"></i></div>
+                <h3 class="card-title text-center">Open To All Men</h3>
+                <p class="card-text text-center">
+                                                No limitation to this at all except &lt; 18 needs parent</p>
+                
+                </div>
+                </div>
+                <div class="card" style="border-radius: 0; border: none; margin-bottom: 0;">
+                <div class="card-body" style="background-color: #D52D3C; padding-top: 70px; padding-bottom:70px;">
+                <div style="text-align: center;">
+                                                <i class="fas fa-cloud-sun-rain fa-5x"></i></div>
+                <h3 class="card-title text-center">Held Outdoors</h3>
+                <p class="card-text text-center">
+                                                Rain/Shine/Heat/Cold We Will Be Out There.</p>
+                
+                </div>
+                </div>
+                <div class="card" style="border-radius: 0; border: none; margin-bottom: 0;">
+                <div class="card-body" style="background-color: #AB2430; padding-top: 70px; padding-bottom:70px;">
+                <div style="text-align: center;">
+                                                <i class="fas fa-people-arrows fa-5x"></i></div>
+                <h3 class="card-title text-center">Peer Led</h3>
+                <p class="card-text text-center">
+                                                In rotating fashion. You don't have to lead, but can.</p>
+                
+                </div>
+                </div>
+                <div class="card" style="border-radius: 0; border: none; margin-bottom: 0;">
+                <div class="card-body" style="background-color: #87212A; padding-top: 70px; padding-bottom:70px;">
+                <div style="text-align: center;">
+                                                <i class="fas fa-life-ring fa-5x"></i></div>
+                <h3 class="card-title text-center">Ends With A Circle of Trust</h3>
+                <p class="card-text text-center">
+                                                Men leaning on men for support</p>
+                
+                </div>
+                </div>
+                </div>
+                </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6 no-gutters" style="padding:0px">
+                                <div width="100%" style="background-image: linear-gradient(to right, RGBA(61,160,251,.32), RGBA(227,115,125,.32)),url('/wp-content/uploads/2020/12/MerkinSitup.png'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 500px;">
+                                </div>
+                            </div>
+                        <div class="col-sm-6 align-self-center no-gutters" style="padding:0px">
+                            <div class="row justify-content-center" style="margin: 0px; text-align: center;">
+                            <h5 class="mt-0" style="font-size: 40px; font-weight: 700;">Austin Founding</h5>
+                            </div>
+                            <div class="row" style="margin:0; text-align: center; word-wrap: break-word;">F3 NATX planted our shovel flags in North Austin in August 20, 2018 at Veterans Memorial Park in Cedar Park, TX. Since then, our fast-growing group has expanded to 4 workouts throughout the week, monthly happy hours and coffeeteria, and volunteer work to help our greater North Austin community in Cedar Park and Leander.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                <div class="row">
+                <div class="col-sm-6 align-self-center no-gutters" style="padding:0px">
+                <div class="row justify-content-center" style="margin: 0px; text-align: center;">
+                <h5 class="mt-0" style="font-size: 40px; font-weight: 700;">1<sup>st</sup> F - Fitness</h5>
+                </div>
+                <div class="row" style="margin:0; text-align: center; word-wrap: break-word;">
+                
+                Our workouts are open to men of all fitness levels and are organized to keep the entire group together while ensuring a thorough beatdown for all participants. Our model, in which leadership of the workout varies from day to day and week to week, means that workout leaders — “Qs,” in F3 lingo — are constantly introducing new exercises and ways of doing them. Because participants are challenged and pushed in new ways every day, they achieve an all-around fitness that makes F3 guys supremely fit for endurance challenges, including mud runs, obstacle races, triathlons, marathons, long-distance relays and all manner of other adventure challenges.
+                While the classic F3 workout requires no equipment other than workout clothes, gravity and the great outdoors, our growth has allowed regional leaders to introduce specialized workouts, including bike rides, gear-focused workouts that include kettlebells and other heavy metal, track workouts for runners and trail runs.
+                
+                F3 workouts take place at publicly accessible venues, including parks, school campuses, churches — even in parking lots!
+                
+                And while the vast majority of F3 workouts launch before the sun is up — largely because that’s the time of day when F3 guys can be most certain of being able to control their schedules — some regions are experimenting with evening workouts.
+                
+                </div>
+                </div>
+                </div>
+                <div class="container-fluid">
+                <div class="row">
+                <div class="col-sm-6 no-gutters" style="padding:0px">
+                <div width="100%" style="background-image: linear-gradient(to right, RGBA(61,160,251,.32), RGBA(227,115,125,.32)),url('/wp-content/uploads/2020/12/MerkinSitup.png'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 500px;"></div>
+                </div>
+                <div class="col-sm-6 align-self-center no-gutters" style="padding:0px">
+                <div class="row justify-content-center" style="margin: 0px; text-align: center;">
+                <h5 class="mt-0" style="font-size: 40px; font-weight: 700;">1<sup>st</sup> F - Fitness</h5>
+                </div>
+                <div class="row" style="margin:0; text-align: center; word-wrap: break-word;">
+                
+                Our workouts are open to men of all fitness levels and are organized to keep the entire group together while ensuring a thorough beatdown for all participants. Our model, in which leadership of the workout varies from day to day and week to week, means that workout leaders — “Qs,” in F3 lingo — are constantly introducing new exercises and ways of doing them. Because participants are challenged and pushed in new ways every day, they achieve an all-around fitness that makes F3 guys supremely fit for endurance challenges, including mud runs, obstacle races, triathlons, marathons, long-distance relays and all manner of other adventure challenges.
+                While the classic F3 workout requires no equipment other than workout clothes, gravity and the great outdoors, our growth has allowed regional leaders to introduce specialized workouts, including bike rides, gear-focused workouts that include kettlebells and other heavy metal, track workouts for runners and trail runs.
+                
+                F3 workouts take place at publicly accessible venues, including parks, school campuses, churches — even in parking lots!
+                
+                And while the vast majority of F3 workouts launch before the sun is up — largely because that’s the time of day when F3 guys can be most certain of being able to control their schedules — some regions are experimenting with evening workouts.
+                
+                </div>
+                </div>
+                </div>
+                <div class="col-sm-6 no-gutters" style="padding:0px">
+                <div width="100%" style="background-image: linear-gradient(to right, RGBA(61,160,251,.32), RGBA(227,115,125,.32)),url('/wp-content/uploads/2020/12/Merkin.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 500px;"></div>
+                </div>
+                </div>
+                
+                <div class="card mt-3 shadow">
+                <div class="card-body" style="background-color: white;">
+                <h3 class="card-title " id="fTitle">3<sup>rd</sup> F - Faith</h3>
+                <p class="card-text">We close each CoT with a brief “shout-out” led by one of the participants. Men are free to pray to their god or to speak from a secular perspective — F3 is open to men of all faiths and no faith, and the closing shout-out is generally the only faith-specific component of a workout. We do it because we are thankful for the opportunity to come together and build ourselves into better men and because the vocal and corporate expression of that gratitude builds a stronger F3 community.</p>
+                Outside of the workouts, we have found that many F3 participants, after getting in the best physical shape of their adult lives and meeting their social needs for the first time as adults, start taking a more serious approach to questions of meaning and purpose. Many F3 workouts have spawned Bible studies, attendance at speaker series and other Third F initiatives. We encourage those efforts as supplements to the workouts and an important way for F3 participants to exercise leadership in their families and communities.
+                
+                </div>
+                </div>
+                <div class="container-fluid" style="padding-top: 15px">
+                <div class="row">
+                <div class="col-sm-3">
+                                            <img width="100%" class="rounded img-fluid" src="https://f3natx.com/wp-content/uploads/2020/09/Image-from-iOS-4-scaled.jpg"></div>
+                <div class="col-sm-3">
+                                            <img width="100%" class="rounded img-fluid" src="https://f3natx.com/wp-content/uploads/2020/08/Image-from-iOS-3-scaled.jpg"></div>
+                <div class="col-sm-3">
+                                            <img width="100%" class="rounded img-fluid" src="https://f3natx.com/wp-content/uploads/2020/08/IMG_9870-scaled.jpeg"></div>
+                <div class="col-sm-3">
+                                            <img width="100%" class="rounded img-fluid" src="https://f3natx.com/wp-content/uploads/2020/07/IMG_9830-scaled.jpeg"></div>
+                </div>
+                <div class="row mt-3">
+                <div class="col-sm-3">
+                                            <img width="100%" class="rounded img-fluid" src="https://f3natx.com/wp-content/uploads/2020/07/Image-from-iOS-1-1-scaled.jpg"></div>
+                <div class="col-sm-3">
+                                            <img width="100%" class="rounded img-fluid" src="https://f3natx.com/wp-content/uploads/2020/06/IMG_9663-scaled.jpeg"></div>
+                <div class="col-sm-3">
+                                            <img width="100%" class="rounded img-fluid" src="https://f3natx.com/wp-content/uploads/2019/11/647D5313-B885-439C-AFF0-7E5D0C10FF05-scaled.jpeg"></div>
+                <div class="col-sm-3">
+                                            <img width="100%" class="rounded img-fluid" src="https://files.f3nation.site/uploads/sites/28/2020/10/Image-from-iOS-46.jpg"></div>
+                </div>
+                </div>
+                </div>
+                
+
+            <!-- <div class="container-fluid">
+                <div class="d-flex flex-row">
+                    <div>
+                        <img src="/wp-content/uploads/2020/12/MerkinSitup.png" alt="" style="height: auto">
+                    </div>
+                    <div>
+                        F3 NATX planted our shovel flags in North Austin in August 20, 2018 at Veterans Memorial Park in Cedar Park, TX. Since then, our fast-growing group has expanded to 4 workouts throughout the week, monthly happy hours and coffeeteria, and volunteer work to help our greater North Austin community in Cedar Park and Leander.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container-fluid" style="padding: 0px;">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="row card-body">
+                                <div class="col-sm-6">
+                                    <h5 class="card-title">...</h5>
+                                    <p class="card-text">....</p>
+                                </div>
+                                    <img class="col-sm-6" src="/wp-content/uploads/2020/12/MerkinSitup.png" alt="sans"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+              <div class="parallax-container" id="pImage">
+                <div class="foreground">
+                  <div class="foreground__content">
+                    <div class="contianer what-is-f3 text-white">
+                        <h2>Still Not Sure F3 Is Right For You?</h2>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9" id="F3Vid">
+                        <iframe class="embed-responsive-item" width="560" height="200" src="https://www.youtube.com/embed/rGo03Y1ZZ3I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+            <nav class="navbar bg-light">
+                <span class="nav-brand">©F3 Austin. All rights reserved.</span>
+                <!-- Social Media -->
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a class="nav-link">Twitter</a></li>
+                    <li class="nav-item"><a class="nav-link">Facebook</a></li>
+                    <li class="nav-item"><a class="nav-link">Instragram</a></li>
+                    <li class="nav-item"><a class="nav-link">Email</a></li>
+                </ul>                
+            </nav>
+        </div>
+
+        <script lang="javascript">
+            $("#nav-top").load("./components/nav-top.html")
+            $("#hero").load("./components/home/hero.html")
+            $("#cards").load("./components/home/cards.html")
+            $("#nation").load("./components/home/nation.html")
+            $("#three-fs").load("./components/home/three-fs.html")
+            $("#nav-bottom").load("./components/nav-bottom.html")
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
